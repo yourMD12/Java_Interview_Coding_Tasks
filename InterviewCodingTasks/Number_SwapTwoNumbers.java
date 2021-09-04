@@ -25,5 +25,14 @@ public class Number_SwapTwoNumbers {
         System.out.println("b = " + b);
     }
 
+    //solution 3:
+    public void swap3(int a, int b) {
+      int c = a;
+      a = b;
+      b = c;
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
 
 }
