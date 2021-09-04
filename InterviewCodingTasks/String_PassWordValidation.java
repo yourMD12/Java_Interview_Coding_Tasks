@@ -11,7 +11,6 @@ public class String_PassWordValidation {
         if all requirements above are met, the method returns true, otherwise returns false
      */
 
-
     public boolean passwordIsValid(String password) {
 
         boolean hasLowerCaseChar = password.matches("(.*[a-z].*)"),
@@ -24,7 +23,6 @@ public class String_PassWordValidation {
                 return true;
             }
         }
-
             return false;
     }
 
