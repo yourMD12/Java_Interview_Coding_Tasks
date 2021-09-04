@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -18,11 +20,8 @@ public class List_RemoveNumbers {
                 it.remove();
             }
         }
-
         return list;
     }
-
-
 
     // solution 2
     public List<Integer> remove2(List<Integer> list){
@@ -30,7 +29,17 @@ public class List_RemoveNumbers {
         return list;
     }
 
-
+    // solution 3:
+    public List<Integer> remove3(List<Integer> list){
+        ArrayList<Integer> list2 = new ArrayList<>();
+        for(int  each : list) {
+            if (each < 100) {
+                list2.add(each);
+            }
+            list = list2;
+        }
+       return list;
+    }
 
 
 
