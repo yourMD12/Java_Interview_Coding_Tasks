@@ -47,7 +47,6 @@ public class String_FrequencyOfCharacters {
             }
             expectedResult += nonDup.charAt(j) + "" + count;
         }
-
         return expectedResult;
     }
 
@@ -64,12 +63,9 @@ public class String_FrequencyOfCharacters {
                     count++;
                 }
             }
-
             result += b.substring(j, j + 1) + count;
         }
-
         return result;
-
     }
 
 
@@ -85,7 +81,6 @@ public class String_FrequencyOfCharacters {
             int num = Collections.frequency(Arrays.asList(str.split("")), "" + nonDup.charAt(i));
             result += "" + nonDup.charAt(i) + num;
         }
-
         return result;
     }
 
