@@ -4,7 +4,7 @@ public class String_SumOfAllIntegers {
     return the sum of all integers found in the parameter String
      */
 
-
+    //Solution 1:
     public static int getSumOfNumbers(String s) {
         /*
             Please implement this method to
@@ -15,15 +15,25 @@ public class String_SumOfAllIntegers {
         */
 
         int sum = 0;
-
         String[] numbers = s.replaceAll("[\\D]+"," ").split(" ");
-
         for(String each : numbers){
                 sum+=Integer.parseInt(each);
         }
-
         return sum;
     }
+
+    //Solution 2:
+    public  static int  sumOfDigits(String s) {
+        int total = 0;
+        char[] ch =  s.toCharArray();
+        for(char each: ch) {
+            if(Character.isDigit(each)) {
+                total += Integer.valueOf(""+each);
+            }
+        }
+        return total;
+    }
+
 
 
 
