@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array_FindMinimum {
 
     /*
@@ -17,6 +19,10 @@ public class Array_FindMinimum {
     }
 
     //Solution 2:
+    public static int maxValue2( int[]  n ) {
+        Arrays.sort( n );
+        return  n [ 0 ];
+    }
 
 
 }
