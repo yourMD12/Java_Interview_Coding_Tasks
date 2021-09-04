@@ -33,7 +33,6 @@ public class Number_ConsecutiveNumbers {
     public void solution(int N) {
 
         String result = "";
-
         for (int i = 1; i <= N; i++) {
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
                 result += "CodilityTestCoders\n";
@@ -53,7 +52,6 @@ public class Number_ConsecutiveNumbers {
                 result += i + "\n";
             }
         }
-
         System.out.println(result);
     }
 
