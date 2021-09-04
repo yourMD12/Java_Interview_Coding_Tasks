@@ -5,17 +5,14 @@ public class String_SortLettersAndNumbers {
     /*
     Given alphanumeric String, we need to split the string into substrings of consecutive letters or numbers,
     sort the individual string and append them back together
-
         Ex:
             Input: "DC501GCCCA098911"
             Output: "CD015ACCCG011899"
-
      */
 
+    //Solution 1:
     public String sortLettersAndNumbers(String str) {
-
         String temp = "";
-
         for (int i = 0; i < str.length(); i++) {
             temp += "" + str.charAt(i);
             if (Character.isAlphabetic(str.charAt(i)) && i < str.length() - 1) {
@@ -23,7 +20,6 @@ public class String_SortLettersAndNumbers {
                     temp += ",";
                 }
             }
-
             if (Character.isDigit(str.charAt(i)) && i < str.length() - 1) {
                 if (Character.isAlphabetic(str.charAt(i + 1))) {
                     temp += ",";
@@ -31,10 +27,8 @@ public class String_SortLettersAndNumbers {
             }
         }
 
-
         String[] arr = temp.split(",");
         str = "";
-
         for (String each : arr) {
             char[] chars = each.toCharArray();
             Arrays.sort(chars);
@@ -42,9 +36,9 @@ public class String_SortLettersAndNumbers {
                 str += "" + eachChar;
             }
         }
-
         return str;
     }
+
 
 
 }
