@@ -15,6 +15,11 @@ public class String_Reverse {
         return reverse;
     }
 
+    //Solution 2
+    public  static String  Reverse(String str) {
+    return new StringBuffer(str).reverse().toString();
+    }
+
 
 
 
