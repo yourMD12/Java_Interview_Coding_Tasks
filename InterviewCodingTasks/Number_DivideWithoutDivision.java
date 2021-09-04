@@ -9,7 +9,6 @@ public class Number_DivideWithoutDivision {
             System.out.println("Invalid Number");
             return;
         }
-
         int count = 0;
         while (num1 >= num2) {
             num1 -= num2;
