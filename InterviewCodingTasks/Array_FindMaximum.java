@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array_FindMaximum {
     /*
         Write a function that can find the maximum number from an int Array
@@ -16,6 +18,10 @@ public class Array_FindMaximum {
     }
 
     //Solution 2:
+    public static int maxValue2(int[] n) {
+        Arrays.sort(n);
+        return n[n.length-1];
+    }
 
 
 }
