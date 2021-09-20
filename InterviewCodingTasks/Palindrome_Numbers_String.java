@@ -1,6 +1,4 @@
 public class Palindrome_Numbers_String {
-    public static void main(String[] args) {
-    }
 
     // solution for numbers
     public static void isPalindrome(int num){
@@ -17,8 +15,17 @@ public class Palindrome_Numbers_String {
         }
     }
 
-    // solution for String
-    public static boolean isPalindrome(String check) {
+    // solution for String:
+    public static void isPalindrome1(String str){
+        String strReverse = new StringBuffer(str).reverse().toString();
+        if(str.equals(strReverse)){
+            System.out.println("its a palindrome");
+        }else{
+            System.out.println("it's not");
+        }
+    }
+
+    public static boolean isPalindrome2(String check) {
         String rev = "";
         for(int i = check.length()-1; i >= 0; i--){
             rev +=check.charAt(i);
