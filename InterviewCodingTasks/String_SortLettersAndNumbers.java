@@ -11,7 +11,7 @@ public class String_SortLettersAndNumbers {
      */
 
     //Solution 1:
-    public String sortLettersAndNumbers(String str) {
+    public static String sortLettersAndNumbers(String str) {
         String temp = "";
         for (int i = 0; i < str.length(); i++) {
             temp += "" + str.charAt(i);
@@ -37,6 +37,10 @@ public class String_SortLettersAndNumbers {
             }
         }
         return str;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sortLettersAndNumbers("DC501"));
     }
 
 
