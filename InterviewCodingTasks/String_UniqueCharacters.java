@@ -9,8 +9,8 @@ public class String_UniqueCharacters {
      */
 
     //Solution 1:
-    public String unique(String str) {
-        String[] arr = str.split("");
+    public String unique(String str) {  // aaabbbcccdef
+        String[] arr = str.split("");  // {"a", "a","a", "b"}
         String unique1 = "";
 
         for (int j = 0; j < arr.length; j++) {
