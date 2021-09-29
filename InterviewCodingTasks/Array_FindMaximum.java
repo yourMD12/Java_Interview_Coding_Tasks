@@ -6,7 +6,7 @@ public class Array_FindMaximum {
      */
 
     //Solution 1:
-    public int maxValue(int[] n) {
+    public static int maxValue(int[] n) {
 
         int max = Integer.MIN_VALUE;
         for (int each : n) {
@@ -21,6 +21,11 @@ public class Array_FindMaximum {
     public static int maxValue2(int[] n) {
         Arrays.sort(n);
         return n[n.length-1];
+    }
+
+    public static void main(String[] args) {
+        System.out.println(maxValue(new int[]{2, 4, 7, 4, 9, 0}));
+        System.out.println(maxValue2(new int[]{2, 4, 6, 8, 9, 7}));
     }
 
 
