@@ -8,14 +8,14 @@ public class Array_Permutation {
     Given an array of 3 characters print all permutation combinations from the given characters
     */
 
-    public void printPermutation(char[] ch) {
+    public static void printPermutation(char[] ch) {
         for (String s : permutation(ch)) {
             System.out.println(Arrays.toString(s.toCharArray()));
         }
     }
 
-    public Set<String> permutation(char[] ch) {
-        String str = Arrays.toString(ch).replace(", ", "").replace("[", "").replace("]", "");
+    public static Set<String> permutation(char[] ch) {
+       String str = Arrays.toString(ch).replace(", ", "").replace("[", "").replace("]", "");
         Set<String> set = new LinkedHashSet<>();
         if (str.length() == 1) {
             set.add(str);
@@ -31,4 +31,10 @@ public class Array_Permutation {
         return set;
     }
 
+    public static void main(String[] args) {
+        printPermutation(new char[]{'a','a','t'});
+
+        char[] t = {'e','u','i','y'};
+        System.out.println(t);
+    }
 }
