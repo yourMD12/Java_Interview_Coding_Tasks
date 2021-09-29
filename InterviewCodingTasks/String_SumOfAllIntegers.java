@@ -34,6 +34,10 @@ public class String_SumOfAllIntegers {
         return total;
     }
 
+    public static void main(String[] args) {
+        System.out.println(sumOfDigits("hello 2 3 5 my name is 6 3 kva"));
+
+    }
 
 
 
