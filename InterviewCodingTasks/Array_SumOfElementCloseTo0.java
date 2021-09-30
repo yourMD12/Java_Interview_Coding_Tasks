@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array_SumOfElementCloseTo0 {
 
     /*
@@ -24,6 +26,10 @@ public class Array_SumOfElementCloseTo0 {
                 }
             }
         return z;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getSumOfTwoClosestToZeroElements(new int[]{ 3,4,-1,-2}));
     }
 
 
