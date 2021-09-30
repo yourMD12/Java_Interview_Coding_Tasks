@@ -7,13 +7,16 @@ public class Array_SortInAscendingOrder {
     Write a method that can sort an int array in Ascending order without using the sort method
          int[] arr = {10, 9, 8, 7};
          arr = Sort(arr);   ==>{ 7, 8, 9, 10};
-
      */
 
-    //Solution 1:
-    public int[] sortingArrayAsc(int[] arr) {
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(sortingArrayAsc(new int[] {8,6,2,0,6,4,7})));
+    }
 
-        int[] result = Arrays.copyOfRange(arr, 0, arr.length);
+    //Solution 1:
+    public static int[] sortingArrayAsc(int[] arr) {
+        int[] result = Arrays.copyOfRange(arr, 0, arr.length);  // [8,6,2,0,6,4,7]
+       // int[] result = new int[arr.length]; [0 0 0 0 0 ]
         for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < result.length; j++) {
                 if (result[i] < result[j]) {
