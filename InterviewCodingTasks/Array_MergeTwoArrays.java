@@ -18,4 +18,12 @@ public class Array_MergeTwoArrays {
         return result;
     }
 
+    public static void main(String[] args) {
+//        String str = Arrays.toString(concatTwoArrays(new int[]{1, 2, 3, 4, 5}, new int[]{9, 8, 7, 6, 5, 4}));
+//        System.out.println(str);
+
+        System.out.println(Arrays.toString(concatTwoArrays(new int[]{1, 2, 3, 4, 5}, new int[]{9, 8, 7, 6, 5, 4})));
+
+    }
+
 }
