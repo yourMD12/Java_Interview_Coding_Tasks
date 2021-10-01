@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class List_sortingInAscOrDescOrder {
@@ -5,7 +7,7 @@ public class List_sortingInAscOrDescOrder {
     // Write a method that can sort the ArrayList in Ascending/descending order without using the sort method
 
     //asc
-    public static void SortingArrayListAsc(List<Integer> list) {
+    public static List<Integer> SortingArrayListAsc(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size(); j++) {
                 if (list.get(i) < list.get(j)) {
@@ -15,6 +17,7 @@ public class List_sortingInAscOrDescOrder {
                 }
             }
         }
+        return list;
     }
 
     //desc
@@ -28,6 +31,11 @@ public class List_sortingInAscOrDescOrder {
                 }
             }
         }
+
     }
 
+    public static void main(String[] args) {
+        SortingArrayListAsc(Arrays.asList(2,5,8,1,9,5,2,6));
+
+    }
 }
