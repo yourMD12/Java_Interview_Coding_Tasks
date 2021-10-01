@@ -23,8 +23,6 @@ public class List_RemovePalindromeStrings {
         return list;
     }
 
-
-
     //solution 2:
     public List<String> removePalindromes2(List<String> list) {
         list.removeIf(p -> isPalindrome(p));
