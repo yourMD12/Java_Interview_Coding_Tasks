@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array_SumUpTo0 {
 
     /*
@@ -9,7 +11,7 @@ public class Array_SumUpTo0 {
         For N = 3 one of the possible answers is [-1,0,1] (but there are many more correct answers).
      */
 
-    public int[] solution(int N) {
+    public static int[] solution(int N) {
         int[] result = new int[N];
         int sum = 0;
         for (int i = 0; i < N - 1; i++) {
@@ -18,6 +20,10 @@ public class Array_SumUpTo0 {
         }
         result[N - 1] = -sum;
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(solution(5)));
     }
 
 
