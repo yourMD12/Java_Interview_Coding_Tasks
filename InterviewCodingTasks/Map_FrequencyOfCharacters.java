@@ -20,6 +20,9 @@ public class Map_FrequencyOfCharacters {
         System.out.println(map);
     }
 
+    public static void main(String[] args) {
+        FrequencyTest("hello");
+    }
 
 
 }
