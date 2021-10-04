@@ -20,21 +20,16 @@ public class List_RemoveNameAhmed {
         return names;
     }
 
-
     // solution 2
     public List<String> remove2(List<String> names) {
         names.removeAll(Arrays.asList("Ahmed"));
         return names;
     }
 
-
     // solution 3
     public List<String> remove3(List<String> names) {
         names.removeIf(name -> name.equals("Ahmed"));
         return names;
     }
-
-
-
 
 }
