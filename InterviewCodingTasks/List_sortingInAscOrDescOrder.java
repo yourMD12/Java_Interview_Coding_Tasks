@@ -21,7 +21,7 @@ public class List_sortingInAscOrDescOrder {
     }
 
     //desc
-    public static void SortingArrayListDesc(List<Integer> list) {
+    public void SortingArrayListDesc(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size(); j++) {
                 if (list.get(i) > list.get(j)) {
@@ -31,11 +31,18 @@ public class List_sortingInAscOrDescOrder {
                 }
             }
         }
-
+        System.out.println(list);
     }
 
     public static void main(String[] args) {
-        SortingArrayListAsc(Arrays.asList(2,5,8,1,9,5,2,6));
+        // for non-static
+        List_sortingInAscOrDescOrder desc = new List_sortingInAscOrDescOrder();
+        desc.SortingArrayListDesc(Arrays.asList(5,9,1,3,0,4));
+
+        // for static
+        List<Integer> list = new ArrayList<>(Arrays.asList(9,3,6,4,0,7,1,6));
+        List<Integer> ascList = SortingArrayListAsc(list);
+        System.out.println(ascList);
 
     }
 }
